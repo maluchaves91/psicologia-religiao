@@ -1,0 +1,241 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[
+    a4paper,
+    12pt,
+    oneside,
+    section=TITLE,
+    brazilian,
+    english
+]{abntex2}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}      % fontes escaláveis — obrigatório p/ microtype não quebrar
+\usepackage{indentfirst}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{csquotes}
+
+% Numeração de seção sem capítulo (evita "0.1", "0.2" ...)
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
+% Espaço duplo em todo o corpo do texto (exigência do edital: "espaço duplo")
+\DoubleSpacing
+% ABNT usa indentação de parágrafo (não espaço entre parágrafos);
+% zerar \parskip também evita o aviso de "infinite glue" no longtable.
+\setlength{\parskip}{0pt}
+
+\hypersetup{
+    colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black,
+    pdfborder={0 0 0}, breaklinks=true,
+    pdftitle={Formação religiosa cristã na infância como violência contra a criança},
+    pdfauthor={[Nome do(a) Pesquisador(a)]}
+}
+
+\begin{document}
+
+% ---------------------------------------------------------------
+% Cabeçalho de identificação
+% ---------------------------------------------------------------
+\begin{center}
+    {\large\textbf{FORMAÇÃO RELIGIOSA CRISTÃ NA INFÂNCIA COMO VIOLÊNCIA\\CONTRA A CRIANÇA}}\\[0.75em]
+    {\large\textbf{uma análise a partir da psicologia histórico-cultural}}\\[2em]
+
+    \textbf{[Nome do(a) Pesquisador(a)]}\\[0.5em]
+    \textbf{Orientador(a): [Nome do(a) Orientador(a)]}\\[1.5em]
+
+    [Instituição / Programa de Pós-Graduação]\\[1.5em]
+
+    [Cidade] --- [Ano]
+\end{center}
+
+\vspace{1em}
+
+% ---------------------------------------------------------------
+% RESUMO (máximo 20 linhas)
+% ---------------------------------------------------------------
+\section*{Resumo}
+
+Este projeto analisa, à luz da psicologia histórico-cultural, em que medida a formação religiosa cristã dirigida à infância constitui violência contra a criança. Parte-se do reconhecimento de que o psiquismo infantil se forma pela mediação do adulto e pela internalização dos signos culturais, em um período em que a criança ainda não dispõe de autonomia cognitiva para avaliar criticamente conteúdos transmitidos como verdades absolutas. A hipótese central é a de que a doutrinação cristã na infância --- por meio do ensino do pecado, do medo do inferno, da culpa e da obediência heterônoma à autoridade divina e clerical --- opera como violência simbólica e psicológica, comprometendo a liberdade de consciência e podendo gerar sofrimento psíquico (trauma religioso). Trata-se de pesquisa teórico-conceitual, de natureza qualitativa, fundamentada no método genético e na análise por unidades de Vigotski, com apoio da análise de conteúdo. O corpus reúne as obras da psicologia histórico-cultural, a literatura sobre violência contra a criança e sobre trauma religioso, e os marcos normativos de proteção à infância (Estatuto da Criança e do Adolescente, Convenção sobre os Direitos da Criança e Lei n.~13.010/2014). Espera-se sistematizar os mecanismos pelos quais essa formação atua sobre o desenvolvimento e propor critérios para distinguir socialização religiosa de violência, subsidiando o debate sobre os limites da liberdade religiosa diante da proteção integral da infância.
+
+\noindent\textbf{Palavras-chave:} infância; violência contra a criança; cristianismo; psicologia histórico-cultural; violência simbólica; doutrinação religiosa; trauma religioso; liberdade de consciência.
+
+\newpage
+
+% ---------------------------------------------------------------
+% 1. INTRODUÇÃO E JUSTIFICATIVA
+% ---------------------------------------------------------------
+\section{Introdução e justificativa}
+
+A presente pesquisa problematiza uma prática socialmente legitimada e raramente submetida ao crivo da crítica: a formação religiosa cristã dirigida à infância. No Brasil, a socialização religiosa das crianças --- da catequese às escolas confessionais, das narrativas familiares aos meios de comunicação de matriz cristã --- é uma prática difundida e socialmente valorizada, amparada na liberdade religiosa garantida constitucionalmente (Brasil, 1988, art.~5º, VI). Contudo, o ordenamento jurídico brasileiro consagra, ao mesmo tempo, o princípio da proteção integral e da prioridade absoluta da criança e do adolescente (Brasil, 1988, art.~227; Brasil, 1990), o que impõe interrogar se e em que medida a transmissão religiosa dirigida à criança --- ser humano em peculiar condição de desenvolvimento, como define o Estatuto da Criança e do Adolescente --- pode configurar uma forma de violência.
+
+O conceito de violência adotado pela Organização Mundial da Saúde (Krug \emph{et al.}, 2002) não se restringe à agressão física: violência é o \enquote{uso intencional da força física ou do poder, real ou em ameaça, contra si próprio, contra outra pessoa, ou contra um grupo ou comunidade, que resulte ou tenha grande probabilidade de resultar em lesão, morte, dano psicológico, desenvolvimento prejudicado ou privação}. A legislação brasileira incorpora essa ampliação: o Estatuto da Criança e do Adolescente assegura o direito à dignidade e à integridade psíquica, e a Lei n.~13.010/2014 (Lei Menino Bernardo) proíbe explicitamente o castigo físico e o tratamento cruel ou degradante contra crianças, reconhecendo que formas não físicas de violência --- humilhação, ameaça, ridicularização --- lesam o desenvolvimento. É nesse marco que a categoria de violência simbólica (Bourdieu, 1989) torna-se central: trata-se da imposição de significações e de uma visão de mundo que naturaliza relações de dominação, obtendo adesão por meio de uma autoridade que se apresenta como legítima e inquestionável.
+
+A psicologia histórico-cultural, inaugurada por Vigotski e desenvolvida por Leontiev, Elkonin, Bozhovich e Davidov, oferece o instrumental teórico-metodológico mais adequado para a análise aqui proposta. Para essa corrente, o psiquismo humano não é dado, mas construído: as funções psicológicas superiores --- pensamento conceitual, atenção voluntária, memória mediada, autocontrole --- formam-se pela apropriação da cultura, processo mediado pelo adulto e pelos signos. A criança, na trajetória que vai do período pré-escolar à adolescência, percorre etapas em que a autonomia crítica ainda não se constituiu plenamente: a formação de conceitos propriamente ditos e a capacidade de avaliar, refutar e reelaborar ativamente as significações que lhe são transmitidas são conquistas tardias do desenvolvimento (Vigotski, 2001). Decorre daí uma assimetria estrutural: o adulto --- e, no caso, a instituição religiosa --- dispõe de instrumentos simbólicos e de uma autoridade que a criança não tem como questionar. As noções de vivência (\emph{perejivânie}) e de situação social de desenvolvimento (Vigotski, 2004; Prestes, 2012) permitem compreender como determinados conteúdos, uma vez internalizados, passam a organizar a relação da criança consigo mesma e com o mundo.
+
+A formação religiosa cristã dirigida à infância caracteriza-se por conteúdos e práticas específicos: a doutrina do pecado original, que define a criança como naturalmente pecadora; a ameaça do inferno e da condenação eterna como consequência da desobediência e da dúvida; a culpa e a vergonha como afetos constitutivos da relação com o sagrado; a obediência heterônoma à autoridade divina e clerical, apresentada como virtude suprema; e a apresentação da fé como valor em si, que torna a dúvida e o questionamento indesejáveis ou mesmo pecaminosos. Transmitidos na infância --- período em que a criança não dispõe de recursos conceituais para avaliá-los criticamente ---, tais conteúdos são internalizados como verdades absolutas e passam a mediar a formação da personalidade.
+
+A literatura internacional tem documentado os efeitos dessa transmissão: Winell (1993) descreve a síndrome do trauma religioso; Heimlich (2011) sistematiza o abuso e a negligência de crianças cometidos em nome da religião; Lifton (1961) analisa os mecanismos de reforma do pensamento aplicáveis aos sistemas de doutrinação; Dawkins (2007) e Hitchens (2007) denunciam a doutrinação infantil como abuso. No plano da psicologia da religião, Freud (2010) já apontava a função consolatória e ilusória da crença, enquanto a ciência cognitiva da religião (Boyer, 2001; Norenzayan, 2013) explica a naturalidade com que crenças religiosas se disseminam e se fixam na infância. A síntese da bibliografia fundamental --- organizada em cinco eixos na tabela de referências ao final deste projeto --- ancora a hipótese e situa a pesquisa em um campo já constituído, porém ainda fragmentado.
+
+A relevância científica desta pesquisa reside em uma lacuna: no Brasil, a psicologia tende a tratar a religião ou como fator de proteção ou como dimensão privada, raramente interrogando se a própria formação religiosa da criança pode constituir violência. A relevância social, por sua vez, decorre da necessidade de subsidiar o debate público sobre os limites da liberdade religiosa diante da proteção integral da infância --- questão que atravessa as políticas educacionais, o princípio da laicidade do Estado e as disputas em torno dos direitos das crianças.
+
+Formula-se, assim, a hipótese central que orienta a pesquisa: a formação religiosa cristã dirigida à infância, quando impõe à criança --- por meio da autoridade adulta e clerical, do medo, da culpa e da exigência de heteronomia --- conteúdos de fé apresentados como verdade absoluta, antes que ela disponha de condições cognitivas e afetivas para avaliá-los, constitui violência contra a criança, de natureza simbólica e psicológica, comprometendo o livre desenvolvimento de sua consciência e podendo gerar sofrimento psíquico.
+
+% ---------------------------------------------------------------
+% 2. OBJETIVOS
+% ---------------------------------------------------------------
+\section{Objetivos}
+
+\subsection{Objetivo geral}
+
+Analisar, à luz da psicologia histórico-cultural, em que medida a formação religiosa cristã dirigida à infância constitui violência contra a criança, sistematizando os mecanismos pelos quais essa formação atua sobre o desenvolvimento do psiquismo infantil.
+
+\subsection{Objetivos específicos}
+
+\begin{enumerate}
+    \item Caracterizar o desenvolvimento do psiquismo infantil --- mediação, internalização, vivência, situação social de desenvolvimento e periodização --- identificando as condições e os limites da criança para a avaliação crítica de conteúdos que lhe são transmitidos.
+    \item Sistematizar as principais práticas e conteúdos da formação religiosa cristã infantil (doutrina do pecado, medo do inferno, culpa, obediência heterônoma) e os efeitos psíquicos documentados na literatura especializada.
+    \item Analisar as categorias de violência contra a criança (física, psicológica, simbólica e espiritual) e os marcos normativos nacionais e internacionais de proteção à infância, cotejando-os com o direito à liberdade religiosa.
+    \item Demonstrar, por meio da articulação teórica, os mecanismos pelos quais a formação religiosa cristã infantil pode constituir violência contra a criança, propondo critérios que permitam distinguir socialização religiosa de violência.
+\end{enumerate}
+
+% ---------------------------------------------------------------
+% 3. PLANO DE TRABALHO E CRONOGRAMA
+% ---------------------------------------------------------------
+\section{Plano de trabalho e cronograma}
+
+O plano de trabalho estrutura-se em oito atividades, distribuídas ao longo de 24 meses (quatro semestres letivos), conforme o cronograma da Tabela~\ref{tab:cronograma}. A ordem das atividades respeita a lógica de amadurecimento da pesquisa: primeiro a constituição e a leitura crítica do corpus, em seguida a elaboração do quadro conceitual e a redação, e, por fim, a qualificação e a defesa. O cronograma é indicativo e poderá ser ajustado em função do calendário institucional.
+
+\begin{SingleSpace}
+\begin{table}[h]
+\centering
+\caption{Cronograma de execução (24 meses)}
+\label{tab:cronograma}
+\begin{tabular}{p{7.4cm} c c c c}
+\toprule
+\textbf{Atividade} & \textbf{S1} & \textbf{S2} & \textbf{S3} & \textbf{S4} \\
+ & (1--6) & (7--12) & (13--18) & (19--24) \\
+\midrule
+Levantamento bibliográfico sistemático & X & & & \\
+Leitura e fichamento: psicologia histórico-cultural & X & X & & \\
+Leitura e fichamento: violência e direitos da infância & X & X & & \\
+Leitura e fichamento: religião, trauma religioso e doutrinação & & X & & \\
+Análise conceitual e construção do quadro de categorias & & X & X & \\
+Redação dos capítulos & & & X & X \\
+Exame de qualificação & & & X & \\
+Redação final, revisão e defesa & & & & X \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{SingleSpace}
+
+% ---------------------------------------------------------------
+% 4. MATERIAL E MÉTODOS
+% ---------------------------------------------------------------
+\section{Material e métodos}
+
+Trata-se de pesquisa teórico-conceitual, de natureza qualitativa e de caráter analítico-crítico, cujo objetivo é produzir uma elaboração teórica --- e não dados empíricos --- capaz de fundamentar a hipótese enunciada. O referencial teórico-metodológico é a psicologia histórico-cultural, adotada não apenas como corpo conceitual, mas como método: o método genético-experimental de Vigotski, que investiga os processos psíquicos em sua gênese e transformação, e a análise por unidades, que preserva as totalidades complexas --- aqui, a unidade de análise é a vivência (\emph{perejivânie}), tomada como a relação entre a criança e a sua situação social de desenvolvimento.
+
+O corpus da pesquisa é constituído por quatro conjuntos documentais: (a) as obras fundadoras e os comentadores da psicologia histórico-cultural (Vigotski, Leontiev, Elkonin, Bozhovich, Davidov, e leitores brasileiros como Prestes e Duarte); (b) a literatura sobre violência contra a criança --- física, psicológica e simbólica --- e sobre os direitos da infância; (c) a literatura sobre religião, desenvolvimento e trauma religioso, incluindo a psicologia e a ciência cognitiva da religião; e (d) os marcos normativos nacionais e internacionais de proteção à infância (Constituição Federal de 1988, Estatuto da Criança e do Adolescente, Lei n.~13.010/2014 e Convenção sobre os Direitos da Criança).
+
+Os procedimentos metodológicos compreendem: (i) levantamento bibliográfico sistemático nas bases SciELO, PePSIC, Portal de Periódicos CAPES, Scopus, Web of Science e PubMed, com descritores em português, inglês e espanhol; (ii) seleção das obras-chave de cada eixo, com critérios de pertinência à hipótese e de relevância no campo; (iii) leitura analítica e fichamento das obras, com destaque para as categorias teóricas centrais; e (iv) construção de um quadro conceitual que articule as categorias da psicologia histórico-cultural às categorias de violência.
+
+% ---------------------------------------------------------------
+% 5. FORMA DE ANÁLISE DOS RESULTADOS
+% ---------------------------------------------------------------
+\section{Forma de análise dos resultados}
+
+A análise será realizada em três planos complementares. O primeiro é a análise conceitual-categorial, de base histórico-cultural: as categorias de mediação, internalização, vivência, situação social de desenvolvimento e periodização serão empregadas como chaves de leitura para examinar os conteúdos e as práticas da formação religiosa cristã infantil. O segundo é a análise de conteúdo temática (Bardin, 2011), aplicada à literatura sobre trauma religioso e maus-tratos religiosos, com o objetivo de sistematizar os mecanismos e os efeitos psíquicos recorrentes relatados nesses estudos. O terceiro é a articulação dialética entre os dois primeiros planos e o plano normativo: os resultados da análise conceitual serão cotejados com os marcos de proteção à infância e com o princípio da proteção integral, de modo a demonstrar --- ou refutar --- a hipótese e a delimitar os critérios de distinção entre socialização religiosa e violência.
+
+O produto final consistirá em uma sistematização teórica que: (i) descreva os mecanismos pelos quais a formação religiosa cristã infantil atua sobre o desenvolvimento do psiquismo; (ii) identifique as formas de violência --- simbólica e psicológica --- a eles correspondentes; e (iii) proponha critérios objetivos para o debate público e para eventuais desdobramentos em políticas de proteção à infância.
+
+% ---------------------------------------------------------------
+% REFERÊNCIAS — TABELA DE AUTORES E LIVROS
+% ---------------------------------------------------------------
+\section*{Referências}\label{sec:referencias}
+
+A bibliografia fundamental está organizada em cinco eixos temáticos, conforme a Tabela~\ref{tab:autores}. Os títulos indicados constituem a base de leitura da pesquisa.
+
+\SingleSpacing
+\small
+\begin{longtable}{@{}p{3.6cm} p{4.0cm} p{7.5cm}@{}}
+\caption{Autores e obras de base, por eixo temático}
+\label{tab:autores}
+\\
+\toprule
+\textbf{Autor(es)} & \textbf{Obra} & \textbf{Contribuição para a pesquisa} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Autor(es)} & \textbf{Obra} & \textbf{Contribuição para a pesquisa} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\multicolumn{3}{@{}l}{\textbf{Eixo 1 --- Psicologia histórico-cultural (fundamentos)}} \\
+\midrule
+Vigotski, L. S. & \emph{A formação social da mente}. Martins Fontes. & Mediação, internalização e gênese das funções psíquicas superiores. \\
+Vigotski, L. S. & \emph{A construção do pensamento e da linguagem}. Martins Fontes. & Relação pensamento--linguagem e formação de conceitos. \\
+Vigotski, L. S. & \emph{Psicologia pedagógica}. Artmed. & Desenvolvimento e educação; papel mediador do adulto. \\
+Vigotski, L. S. & \emph{Obras escogidas}. Visor. & Método genético, análise por unidades e conceito de vivência. \\
+Leontiev, A. N. & \emph{O desenvolvimento do psiquismo}. & Atividade, apropriação da cultura e processo de humanização. \\
+Elkonin, D. B. & \emph{Psicologia do jogo}. Martins Fontes. & Periodização do desenvolvimento e atividade principal. \\
+Bozhovich, L. I. & \emph{A personalidade e sua formação na idade infantil}. & Formação da personalidade, necessidades e motivos na infância. \\
+Davidov, V. V. & \emph{La enseñanza escolar y el desarrollo psíquico}. & Desenvolvimento do pensamento teórico. \\
+Prestes, Z. & \emph{Quando não é quase a mesma coisa}. Autores Associados. & Fidelidade conceitual a Vigotski (vivência, zona de desenvolvimento). \\
+Duarte, N. & \emph{Vigotski e o ``aprender a aprender''}. Autores Associados. & Crítica e apropriação do conhecimento; pedagogia histórico-crítica. \\
+\midrule
+
+\multicolumn{3}{@{}l}{\textbf{Eixo 2 --- Violência, infância e direitos}} \\
+\midrule
+Krug, E. G. \emph{et al.} & \emph{Relatório mundial sobre violência e saúde}. OMS. & Definição ampliada de violência (dano psicológico, desenvolvimento prejudicado). \\
+Minayo, M. C. S. & \emph{Violência e saúde}. Editora Fiocruz. & Conceito e tipologias da violência no contexto brasileiro. \\
+Azevedo, M. A.; Guerra, V. N. A. & \emph{Infância e violência doméstica}. & Violência psicológica contra crianças e seus efeitos. \\
+Bourdieu, P. & \emph{O poder simbólico}. Bertrand Brasil. & Violência simbólica e naturalização da dominação. \\
+Žižek, S. & \emph{Violência}. Boitempo. & Violência simbólica e sistêmica. \\
+Brasil & \emph{Estatuto da Criança e do Adolescente} (Lei n.~8.069/1990). & Proteção integral, dignidade e integridade psíquica da criança. \\
+Brasil & \emph{Lei n.~13.010/2014} (Lei Menino Bernardo). & Proibição do castigo físico e do tratamento cruel ou degradante. \\
+ONU & \emph{Convenção sobre os Direitos da Criança} (1989), art.~14. & Liberdade de pensamento, consciência e religião da criança. \\
+\midrule
+
+\multicolumn{3}{@{}l}{\textbf{Eixo 3 --- Religião, desenvolvimento e trauma religioso}} \\
+\midrule
+Winell, M. & \emph{Leaving the Fold}. & Síndrome do trauma religioso (Religious Trauma Syndrome). \\
+Heimlich, J. & \emph{Breaking Their Will}. & Maus-tratos e abuso religioso contra crianças. \\
+Dawkins, R. & \emph{Deus, um delírio}. Companhia das Letras. & A doutrinação infantil como abuso. \\
+Hitchens, C. & \emph{Deus não é grande}. Ediouro. & Crítica à doutrinação religiosa na infância. \\
+Freud, S. & \emph{O futuro de uma ilusão}. & A religião como ilusão e mecanismo de proteção psíquica. \\
+Lifton, R. J. & \emph{Thought Reform and the Psychology of Totalism}. & Reforma do pensamento e controle ideológico em sistemas fechados. \\
+Hassan, S. & \emph{Combating Cult Mind Control}. & Mecanismos de controle mental em grupos religiosos. \\
+Boyer, P. & \emph{Religion Explained}. & Ciência cognitiva da religião; naturalidade da crença. \\
+Norenzayan, A. & \emph{Big Gods}. & Grandes deuses, moralização e fixação das crenças. \\
+\midrule
+
+\multicolumn{3}{@{}l}{\textbf{Eixo 4 --- Sociologia e história da infância}} \\
+\midrule
+Ariès, P. & \emph{História social da criança e da família}. & Invenção social da infância como categoria distinta. \\
+Corsaro, W. & \emph{Sociologia da infância}. Artmed. & A criança como ator social; cultura de pares. \\
+Qvortrup, J. (org.) & \emph{The Palgrave Handbook of Childhood Studies}. & A infância como categoria estrutural da sociedade. \\
+Postman, N. & \emph{O desaparecimento da infância}. & Infância, meios de comunicação e perda da inocência. \\
+Korczak, J. & \emph{Como amar uma criança}. Paz e Terra. & Respeito e direitos da criança; pedagogia da autonomia. \\
+\midrule
+
+\multicolumn{3}{@{}l}{\textbf{Eixo 5 --- Laicidade, religião e pensamento crítico no Brasil}} \\
+\midrule
+Prandi, R. & \emph{Um sopro do espírito}. & Panorama religioso brasileiro e transição religiosa. \\
+Pierucci, A. F. & \emph{O desencantamento do mundo} (org.). & Secularização e desencantamento do mundo. \\
+Montero, P. & \emph{Religião e política} (org.). & Laicidade e esfera pública no Brasil. \\
+Diniz, D. & \emph{Estado laico}. & Laicidade do Estado e direitos fundamentais. \\
+\bottomrule
+\end{longtable}
+\DoubleSpacing
+
+\end{document}
